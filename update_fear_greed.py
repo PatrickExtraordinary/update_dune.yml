@@ -24,7 +24,7 @@ import requests
 
 dune_api_key = "sHXBTuxvtVHDh12WRP1kYZ24y4HRT9CI"
 upload_id = "gulfquant.dataset_fear_and_greed_index_daily"   # your Dune Upload ID
-endpoint = f"https://api.dune.com/api/v1/uploads/{upload_id}/replace-file"
+endpoint = "https://api.dune.com/api/v1/uploads/by-name/dune.gulfquant.dataset_fear_and_greed_index_daily/replace-file"
 
 files = {"file": ("fear_and_greed_index.csv", csv_bytes, "text/csv")}
 headers = {"X-Dune-API-Key": dune_api_key}
